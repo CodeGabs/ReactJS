@@ -1,20 +1,14 @@
-import logo from './logoriviss.png';
 import './App.css';
+import NavBar from './components/NavBar/NavBar'
+import {ItemListContainer} from './components/ItemListContainer/ItemListContainer'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-          Online Store
-        </h1>
-        <p>
-          Coming soon!
-        </p>
-        
-      </header>
+    <div>
+      <NavBar/>
+      <ItemListContainer greeting = "Coming soon!"/>
     </div>
+    
   );
 }
 

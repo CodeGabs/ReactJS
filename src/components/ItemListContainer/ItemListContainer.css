@@ -1,0 +1,13 @@
+.body {
+    background-color: #ffffff;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(204, 156, 22);
+    font-style: oblique;
+  }
+  
+ 
