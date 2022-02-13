@@ -1,5 +1,5 @@
 import { Button, Card } from "react-bootstrap"
-import './Item.css'
+import './Item.css' 
 
 export const Item = ( {id, nombre, precio, img, desc} ) => {
 
