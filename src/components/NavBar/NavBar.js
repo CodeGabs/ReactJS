@@ -1,13 +1,14 @@
 import React from 'react'
 import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget'
+import {Link} from 'react-router-dom'
 export default function NavBar() {
     return (
         <header class="header">
 
             <div class="headerMenu">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="index.html"> <img src="./images/logoriviss.png" alt="logo riviss" />
+                    <a class="navbar-brand" href="index.html"> <img src="/images/logoriviss.png" alt="logo riviss" />
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

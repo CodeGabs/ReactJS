@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
 import { getData } from '../../helpers/getData';
 import { ItemDetail } from '../ItemDetail/ItemDetail';
+import { useParams } from 'react-router-dom';
 
 export const ItemDetailContainer = () => {
 
     const [loading, setLoading] = useState(false)
     const [item, setItem] = useState(null)
+    const { itemId } = useParams()
 
-    
+    console.log(itemId)    
     console.log(item)
 
     useEffect(() => {
@@ -15,7 +17,7 @@ export const ItemDetailContainer = () => {
 
         getData()
             .then((res) => {
-                setItem( res[0] ) //tempralmente hasta emplear routing//
+                setItem( res.find((el) => el.id === Number(itemId)) )
             })
             .finally(() => {
                 setLoading(false)
