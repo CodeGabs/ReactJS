@@ -7,6 +7,12 @@
     padding-left: 40px;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
+
+.header-link{
+    color: rgb(88, 81, 56);
+    text-decoration: none;
+}
+
 .header img{
         width: 140px;
         vertical-align: middle;
@@ -16,24 +22,24 @@
 }
 
 .headerMenu{
-    width: 40%;
+    width: 50%;
 }
 .headerMenu ul{
-        list-style-type: none;
-        font-weight: 500;
-        display: flex;
-        justify-content: space-between;        
-        height: 25%;
-        align-items: center;
-        padding-right:40px ;
+    list-style-type: none;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;        
+    height: 25%;
+    align-items: center;
+    padding-right:40px ;
 }        
 .headerMenu li:hover{
-        color: rgb(88, 81, 56);
+    color: rgb(88, 81, 56);
 }
 .headerMenu li{
-            display: inline-block;
-            padding: 5px;
-            margin: 0px 10px;
+    display: inline-block;
+    padding: 5px;
+    margin: 0px 10px;
 }
 .headerMenu div{
     justify-content: flex-end;

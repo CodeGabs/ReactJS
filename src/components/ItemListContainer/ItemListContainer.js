@@ -9,15 +9,18 @@ export const ItemListContainer = () => {
     const [loading, setLoading] = useState(false)
 
     const { catId } = useParams()
-    console.log(catId)
+    
 
     useEffect(() => {
+        console.log("pig");
         setLoading(true)
 
         getData()
             .then((res) => {
                 if (catId) {
+                    
                     setProductos(res.filter((el) => el.categoria === catId))
+                                        
                 } else {
                     setProductos(res)
                 }

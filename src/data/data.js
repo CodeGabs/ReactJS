@@ -5,7 +5,8 @@ export const data = [
         desc: 'Aretes de plata',
         precio: 350,
         img: '/images/arete_plata.jpg',
-        stock: 10
+        stock: 10,
+        categoria: 'joyas'
     },
     {
         nombre: 'Reloj Via',
@@ -13,7 +14,8 @@ export const data = [
         desc: 'Reloj de cuero con aplicaciones de plata',
         precio: 300,
         img: '/images/reloj2.jpg',
-        stock: 9
+        stock: 9,
+        categoria: 'relojes'
     },
     {
         nombre: 'Collar Pearl',
@@ -21,7 +23,8 @@ export const data = [
         desc: 'Collar de plata',
         precio: 400,
         img: '/images/promo2.jpg',
-        stock: 8
+        stock: 8,
+        categoria: 'joyas'
     },
     {
         nombre: 'Reloj Rubí',
@@ -29,7 +32,8 @@ export const data = [
         desc: 'Reloj de cuero vegetal',
         precio: 350,
         img: '/images/relojes.jpg',
-        stock: 15
+        stock: 15,
+        categoria: 'promociones'
     },
     
 ]

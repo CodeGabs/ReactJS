@@ -3,21 +3,21 @@ import { getData } from '../../helpers/getData';
 import { ItemDetail } from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
 
+
 export const ItemDetailContainer = () => {
 
     const [loading, setLoading] = useState(false)
     const [item, setItem] = useState(null)
     const { itemId } = useParams()
 
-    console.log(itemId)    
-    console.log(item)
+    
 
     useEffect(() => {
         setLoading(true)
 
         getData()
             .then((res) => {
-                setItem( res.find((el) => el.id === Number(itemId)) )
+                setItem(res.find((el) => el.id === Number(itemId)))
             })
             .finally(() => {
                 setLoading(false)
@@ -25,12 +25,12 @@ export const ItemDetailContainer = () => {
     }, [])
 
     return (
-        <div className='container my-5'>
+        <div className='container'>
             {
-                loading 
-                ? <h2>Cargando...</h2>
-                : <ItemDetail {...item}/>
+                loading
+                    ? <h2>Cargando...</h2>
+                    : <ItemDetail {...item} />
             }
         </div>
-)
+    )
 };

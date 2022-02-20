@@ -1,9 +1,9 @@
 import { data } from "../data/data"
 
 export const getData = () => {
-    return new Promise( (resolve, reject) => {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(data)
-        },2000)
+        }, 2000)
     })
 }
