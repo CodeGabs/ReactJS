@@ -12,7 +12,6 @@ export const ItemListContainer = () => {
     
 
     useEffect(() => {
-        console.log("pig");
         setLoading(true)
 
         getData()
@@ -24,7 +23,6 @@ export const ItemListContainer = () => {
                 } else {
                     setProductos(res)
                 }
-                setProductos(res)
             })
             .catch((err) => {
                 console.log(err)

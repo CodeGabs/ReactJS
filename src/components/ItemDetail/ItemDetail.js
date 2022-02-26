@@ -6,23 +6,21 @@ import { ItemCount } from "../ItemCount/ItemCount"
 
 export const ItemDetail = ({ id, nombre, img, desc, precio, stock, categoria }) => {
 
-    const [cantidad, setCantidad] = useState(0)
+
 
     const { agregarAlCarrito, isInCart } = useContext(CartContext)
 
-    const handleAgregar = () => {
+    const onAdd = (cantidad) => {
+        
+        console.log(cantidad)
         if (cantidad === 0) return
 
         if (!isInCart(id)) {
             const addItem = {
                 id, nombre, precio, stock, cantidad
             }
-
             agregarAlCarrito(addItem)
-
         }
-
-
     }
 
     return (
@@ -41,20 +39,14 @@ export const ItemDetail = ({ id, nombre, img, desc, precio, stock, categoria }) 
                     <>
                         <ItemCount
                             max={stock}
-                            counter={cantidad}
-                            setCounter={setCantidad}
+                            onAdd={onAdd}
                         />
 
-                        <button
-                            className="btn btn-info my-2"
-                            onClick={handleAgregar}
-                        >
-                            Agregar al carrito
-                        </button>
+
                     </>
             }
 
-            
+
 
         </div >
     )
