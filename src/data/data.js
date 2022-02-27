@@ -33,6 +33,15 @@ export const data = [
         precio: 350,
         img: '/images/relojes.jpg',
         stock: 15,
+        categoria: 'relojes'
+    },
+    {
+        nombre: 'Reloj Jade',
+        id: 5,
+        desc: 'Reloj de cuero vegetal',
+        precio: 200,
+        img: '/images/reloj_jade.jpg',
+        stock: 5,
         categoria: 'promociones'
     },
     

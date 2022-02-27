@@ -6,8 +6,6 @@ import { ItemCount } from "../ItemCount/ItemCount"
 
 export const ItemDetail = ({ id, nombre, img, desc, precio, stock, categoria }) => {
 
-
-
     const { agregarAlCarrito, isInCart } = useContext(CartContext)
 
     const onAdd = (cantidad) => {

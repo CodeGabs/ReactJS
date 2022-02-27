@@ -6,9 +6,11 @@ import { CartContext } from '../../context/CartContext'
 
 
 export const CartWidget = () => {
-    const { cantidadCart } = useContext(CartContext)
+    const { cantidadCart, cart } = useContext(CartContext)
 
     return (
+
+        cart.length>0 && 
         <Link to="/cart" className='cartWidget'>
             <BsFillCartFill/>
             <span>{cantidadCart()}</span>
